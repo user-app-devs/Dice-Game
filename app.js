@@ -68,7 +68,7 @@ function cancell() {
 }
  userEdit.addEventListener("click",mainUser);
 function mainUser() {
-    mainForm.style.display = "block";
+    mainForm.style.display = "grid";
     
    
 };
