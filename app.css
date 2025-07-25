@@ -92,7 +92,7 @@ header nav .restart-div .restart-btn {
   gap: 25px;
   padding-top: 50px;
 }
-.image-dis {
+.rotate{
   transition: transform 1s;
 }
 

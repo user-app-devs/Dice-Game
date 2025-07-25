@@ -22,8 +22,9 @@ let showReset = document.querySelector(".reset-game");
 showReset.style.display =  "none";
 let gameYes = document.getElementById("game-yes");
 let gameNo = document.getElementById("game-no");
-let rotation = document.querySelector(".roat");
-let num = 0;
+let rota1 = document.querySelector(".rotate-1");
+let rota2 = document.querySelector(".rotate-2");
+let rotation = 0;
 //main form catching
 let mainForm = document.querySelector(".show-form");
 mainForm.style.display = "none";
@@ -129,8 +130,13 @@ function save() {
     let resultTwo = array[randomTwo];
     imgOne.src = resultOne;
     imgTwo.src = resultTwo;
+rotation += 720;
+    rota1.style.transition = "transform 1s";
+     rota2.style.transition = "transform 1s";
+    rota1.style.transform = `rotate(${rotation}deg)`;
+    rota2.style.transform = `rotate(${rotation}deg)`;
     
-    
+    //If Statement function
         if(resultOne > resultTwo) {
         userScore++;
         localStorage.setItem("uScore",userScore);
