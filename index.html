@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Dice Game</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo-div"><span class="logo-text">DICE R<img src="dice-logo.jpg" class="dice-logo" alt="dice-logo">LL</span></span>
+      <div class="restart-div"><button id="restart-btn" class="restart-btn">Reset All</button></div>
+    </nav>
+  </header>
+  <div class="center">
+  <div  class="width-tool">
+  <div class="main-div">
+    <div class="user-comp-div">
+    <div class="user-div">
+      <button id="edit-user" class="edit-user">Edit <i class="fas fa-edit"></i></button>
+    </div>
+    
+    <div class="user-comp-name">
+      <p class="name-label"><span id="user-name"></span>: <span class="user-score" id="user-score">0</span></p>
+      <p class="name-label"><span id="comp-name">Computer</span>: <span class="user-score" id="comp-score">0</span></p>
+
+    </div>
+    </div>
+    <div class="show-game">
+      <div class="image-dis roat">
+        <img src="dicef.png" id="img-src1" alt="user-score" class="user-show">
+        <p id="user-exchange" class="user">Unknown User</p>
+      </div>
+ <div class="image-dis">
+        <img src="dicef.png" id="img-src2" alt="comp-score" class="user-show">
+   <p class="user">Computer</p>
+      </div>
+ 
+    </div>
+    <div class="btn-div">
+    <button id="btn-roll" class="btn-roll">ROLL DICE</button>
+      <p id="statement"></p>
+    </div>
+    </div>
+  <div class="main-form show-form">
+    <div class="form-win">
+    <div class="form">
+      <label class="user-label" for="username"><spqn class="add">*</spqn>User Name</label>
+      <input type="text" placeholder="User Name" id="myname" class="username">
+      <p id="run-element"></p>
+      <button id="btn-save-name" class="btn-save-name">Save Now</button>  
+    </div>
+      <div class="cancel-div">
+        <div class="cancel-ele">
+          <i class="fa fa-times" aria-hidden="true"></i>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="reset-game">
+    <div class="show-reset">
+      <div class="con-reset">
+      <p class="content">Are you Sure to reset all?</p>
+      </div>
+      <div class="reset-option">
+      <button id="game-no"  class="game-no">No</button>
+      <button id="game-yes" class="game-yes">Yes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="foot">
+    <footer>Site Develop by Samuel DevPhp</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: white;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0px 1px 7px 1px grey;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+header nav .dice-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+}
+
+header nav .logo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .logo-div .logo-text {
+  font-size: 25px;
+  font-family: "roboto mono";
+  font-weight: bold;
+  background-image: linear-gradient(to right,#1DB954,dimgray);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header nav .restart-div .restart-btn {
+  padding: 8px;
+  background-image: linear-gradient(to bottom,#1DB954,dimgray);
+  color: white;
+  font-size: 19px;
+  font-family: "roboto mono";
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.main-div{
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.user-comp-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-comp-div .user-div .edit-user {
+  padding: 10px;
+  color: white;
+  font-family: "roboto mono";
+  background: #1DB954;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.user-comp-div .user-comp-name .name-label {
+  font-family: "roboto mono";
+  font-size: 17px;
+  font-weight: bold;
+  color: dimgray;
+}
+
+.user-score {
+   color: black;
+}
+
+.show-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-top: 50px;
+}
+.image-dis {
+  transition: transform 1s;
+}
+
+.image-dis .user-show {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.user {
+  color: dimgrey;
+  overflow: hidden;
+  width: 90px;
+  font-size: 16px;
+  font-family: "roboto mono";
+}
+
+
+.btn-div {
+  text-align: center;
+}
+
+.btn-div .btn-roll {
+  padding: 10px;
+  color: white;
+  font-family: "roboto mono";
+  font-size: 18px;
+  border: none;
+  background-image: linear-gradient( to bottom,#1DB954,limegreen,#f8f8ff);
+  border-radius: 5px;
+}
+
+
+.main-form {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 87%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(255,255,255,0.8);
+}
+
+.form-win {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.form{
+  display: grid;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 1px 7px 1px grey;
+}
+
+
+
+.form .user-label {
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-family: "roboto mono";
+  color: dimgray;
+  
+}
+
+.form .user-label .add {
+  color: red;
+}
+
+.form .username {
+  padding: 10px;
+  color: grey;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-family: sans-serif;
+  
+}
+#run-element {
+  margin-top:3px;
+  margin-bottom: 5px;
+  font-family: "roboto mono";
+}
+
+.form .username:focus {
+  border: 2px solid teal;
+  outline: none;
+}
+
+.form .btn-save-name {
+  padding: 10px;
+  font-size: 18px;
+  font-family: "roboto mono";
+  color:  white;
+  background: #1DB954;
+  border: none;
+  margin-top: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+#statement {
+  font-family: "roboto mono";
+  font-weight: bold;
+  color: black;
+  font-size: 17px;
+  
+}
+.cancel-div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  
+}
+
+.cancel-ele {
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 70px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.reset-game {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background: rgb(255,255,255,0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+.show-reset {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 1px grey;
+}
+
+.show-reset .con-reset {
+  font-family: "roboto mono";
+  color: black;
+  font-size: 17px;
+}
+
+.content {
+  letter-spacing: -1px;
+  word-spacing: 1px;
+}
+
+
+.show-reset .reset-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.show-reset .reset-option .game-no {
+  width: 80px;
+  padding: 7px;
+  font-size: 16px;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 5px;
+
+}
+.show-reset .reset-option .game-yes {
+  width: 80px;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: #1DB954;
+}
+.foot{
+  margin: 0;
+  background: #1DB954;
+  color: white;
+  align-content: center;
+  font-family: "roboto mono";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+  }
+  .width-tool {
+    width: 550px;
+  }
+}
+
